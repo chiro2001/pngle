@@ -28,7 +28,11 @@
 #include <stdint.h>
 #include <math.h>
 
+#ifndef PNGLE_CUSTOM_MINIZ
+#include "miniz_bundle.h"
+#else
 #include "miniz.h"
+#endif
 #include "pngle.h"
 
 #ifndef MIN
